@@ -77,11 +77,12 @@ func main() {
 			WebviewUserDataPath: "",
 			ZoomFactor:          1.0,
 		},
+		// Linux platform specific options
 		Linux: &linux.Options{
-			Icon:                icon,
-			WindowIsTranslucent: true,
-			WebviewGpuPolicy:    linux.WebviewGpuPolicyNever,
-			ProgramName:         "wails",
+			Icon: icon,
+			// WindowIsTranslucent: true,
+			WebviewGpuPolicy: linux.WebviewGpuPolicyNever,
+			// ProgramName:         "wails",
 		},
 		// Mac platform specific options
 		Mac: &mac.Options{
